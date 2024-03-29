@@ -1,0 +1,6 @@
+pandas
+numpy
+requests
+scikit-learn
+joblib
+apache-airflow>=2.0,<3

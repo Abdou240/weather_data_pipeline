@@ -1,0 +1,33 @@
+[2024-03-24 04:48:04,049] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.get_weather_data 2024-03-24T04:47:00+00:00 [queued]>
+[2024-03-24 04:48:04,119] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.get_weather_data 2024-03-24T04:47:00+00:00 [queued]>
+[2024-03-24 04:48:04,124] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 04:48:04,129] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2024-03-24 04:48:04,136] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 04:48:04,215] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): get_weather_data> on 2024-03-24T04:47:00+00:00
+[2024-03-24 04:48:04,231] {standard_task_runner.py:52} INFO - Started process 2252 to run task
+[2024-03-24 04:48:04,245] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'get_weather_data', '2024-03-24T04:47:00+00:00', '--job-id', '16', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/file.py', '--cfg-path', '/tmp/tmpt7tf_687', '--error-file', '/tmp/tmp5r92607k']
+[2024-03-24 04:48:04,268] {standard_task_runner.py:77} INFO - Job 16: Subtask get_weather_data
+[2024-03-24 04:48:04,454] {logging_mixin.py:104} INFO - Running <TaskInstance: weather_data_pipeline.get_weather_data 2024-03-24T04:47:00+00:00 [running]> on host ce3400b6b8c4
+[2024-03-24 04:48:04,591] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_data_pipeline
+AIRFLOW_CTX_TASK_ID=get_weather_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-24T04:47:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-24T04:47:00+00:00
+[2024-03-24 04:48:04,592] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: weather_data_to_File() missing 2 required positional arguments: 'api_key' and 'cities'
+[2024-03-24 04:48:04,596] {taskinstance.py:1551} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=get_weather_data, execution_date=20240324T044700, start_date=20240324T044804, end_date=20240324T044804
+[2024-03-24 04:48:04,675] {local_task_job.py:151} INFO - Task exited with return code 1

@@ -1,0 +1,113 @@
+[2024-03-24 08:58:27,477] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.select_and_save_best_model 2024-03-24T08:57:00+00:00 [queued]>
+[2024-03-24 08:58:27,557] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.select_and_save_best_model 2024-03-24T08:57:00+00:00 [queued]>
+[2024-03-24 08:58:27,562] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 08:58:27,563] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2024-03-24 08:58:27,563] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 08:58:27,730] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): select_and_save_best_model> on 2024-03-24T08:57:00+00:00
+[2024-03-24 08:58:27,770] {standard_task_runner.py:52} INFO - Started process 18349 to run task
+[2024-03-24 08:58:27,820] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'select_and_save_best_model', '2024-03-24T08:57:00+00:00', '--job-id', '898', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/file.py', '--cfg-path', '/tmp/tmpdljmgtdx', '--error-file', '/tmp/tmpw2shorwy']
+[2024-03-24 08:58:27,821] {standard_task_runner.py:77} INFO - Job 898: Subtask select_and_save_best_model
+[2024-03-24 08:58:28,356] {logging_mixin.py:104} INFO - Running <TaskInstance: weather_data_pipeline.select_and_save_best_model 2024-03-24T08:57:00+00:00 [running]> on host ce3400b6b8c4
+[2024-03-24 08:58:29,207] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_data_pipeline
+AIRFLOW_CTX_TASK_ID=select_and_save_best_model
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-24T08:57:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-24T08:57:00+00:00
+[2024-03-24 08:58:30,526] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:30,801] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:31,282] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:31,311] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:31,503] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:31,569] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:31,827] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:31,907] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:32,117] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:32,323] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:32,550] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:32,580] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:32,788] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:32,815] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:33,174] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:33,258] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:33,618] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:33,665] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:58:35,074] {logging_mixin.py:104} INFO - LinearRegression model saved at /app/raw_files/model/LinearRegression.pickle
+[2024-03-24 08:58:35,079] {python.py:151} INFO - Done. Returned value was: None
+[2024-03-24 08:58:35,167] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=select_and_save_best_model, execution_date=20240324T085700, start_date=20240324T085827, end_date=20240324T085835
+[2024-03-24 08:58:35,301] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-24 08:58:35,481] {local_task_job.py:151} INFO - Task exited with return code 0

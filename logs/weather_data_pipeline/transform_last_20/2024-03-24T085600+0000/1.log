@@ -1,0 +1,22 @@
+[2024-03-24 08:57:10,874] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.transform_last_20 2024-03-24T08:56:00+00:00 [queued]>
+[2024-03-24 08:57:10,916] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.transform_last_20 2024-03-24T08:56:00+00:00 [queued]>
+[2024-03-24 08:57:10,917] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 08:57:10,920] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2024-03-24 08:57:10,921] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 08:57:10,959] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): transform_last_20> on 2024-03-24T08:56:00+00:00
+[2024-03-24 08:57:10,977] {standard_task_runner.py:52} INFO - Started process 18235 to run task
+[2024-03-24 08:57:10,985] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'transform_last_20', '2024-03-24T08:56:00+00:00', '--job-id', '887', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/file.py', '--cfg-path', '/tmp/tmpnbl5p6ce', '--error-file', '/tmp/tmph9chrcu0']
+[2024-03-24 08:57:10,987] {standard_task_runner.py:77} INFO - Job 887: Subtask transform_last_20
+[2024-03-24 08:57:11,136] {logging_mixin.py:104} INFO - Running <TaskInstance: weather_data_pipeline.transform_last_20 2024-03-24T08:56:00+00:00 [running]> on host ce3400b6b8c4
+[2024-03-24 08:57:11,306] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_data_pipeline
+AIRFLOW_CTX_TASK_ID=transform_last_20
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-24T08:56:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-24T08:56:00+00:00
+[2024-03-24 08:57:11,671] {python.py:151} INFO - Done. Returned value was: None
+[2024-03-24 08:57:11,734] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=transform_last_20, execution_date=20240324T085600, start_date=20240324T085710, end_date=20240324T085711
+[2024-03-24 08:57:11,861] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-24 08:57:11,937] {local_task_job.py:151} INFO - Task exited with return code 0

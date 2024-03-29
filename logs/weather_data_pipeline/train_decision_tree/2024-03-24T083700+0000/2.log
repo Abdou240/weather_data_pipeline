@@ -1,0 +1,150 @@
+[2024-03-24 08:40:34,908] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.train_decision_tree 2024-03-24T08:37:00+00:00 [queued]>
+[2024-03-24 08:40:34,930] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: weather_data_pipeline.train_decision_tree 2024-03-24T08:37:00+00:00 [queued]>
+[2024-03-24 08:40:34,931] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 08:40:34,935] {taskinstance.py:1088} INFO - Starting attempt 2 of 2
+[2024-03-24 08:40:34,935] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-24 08:40:34,960] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): train_decision_tree> on 2024-03-24T08:37:00+00:00
+[2024-03-24 08:40:34,969] {standard_task_runner.py:52} INFO - Started process 16893 to run task
+[2024-03-24 08:40:34,976] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'train_decision_tree', '2024-03-24T08:37:00+00:00', '--job-id', '769', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/file.py', '--cfg-path', '/tmp/tmpw0abgftm', '--error-file', '/tmp/tmp86s_y6xs']
+[2024-03-24 08:40:34,977] {standard_task_runner.py:77} INFO - Job 769: Subtask train_decision_tree
+[2024-03-24 08:40:35,060] {logging_mixin.py:104} INFO - Running <TaskInstance: weather_data_pipeline.train_decision_tree 2024-03-24T08:37:00+00:00 [running]> on host ce3400b6b8c4
+[2024-03-24 08:40:35,161] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_data_pipeline
+AIRFLOW_CTX_TASK_ID=train_decision_tree
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-24T08:37:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-24T08:37:00+00:00
+[2024-03-24 08:40:35,222] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,226] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,276] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,280] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,349] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,354] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,406] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,411] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,452] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,459] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,504] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,510] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,560] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,565] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,623] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,627] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,696] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1596 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,703] {logging_mixin.py:104} WARNING - /home/***/.local/lib/python3.6/site-packages/pandas/core/indexing.py:1743 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-03-24 08:40:35,778] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/joblib/parallel.py", line 825, in dispatch_one_batch
+    tasks = self._ready_batches.get(block=False)
+  File "/usr/local/lib/python3.6/queue.py", line 161, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/file.py", line 119, in compute_model_score
+    score = cross_val_score(model, X, y, cv=3, scoring='neg_mean_squared_error').mean()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/model_selection/_validation.py", line 450, in cross_val_score
+    error_score=error_score)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/model_selection/_validation.py", line 256, in cross_validate
+    for train, test in cv.split(X, y, groups))
+  File "/home/airflow/.local/lib/python3.6/site-packages/joblib/parallel.py", line 1048, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/airflow/.local/lib/python3.6/site-packages/joblib/parallel.py", line 836, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/model_selection/_validation.py", line 251, in <genexpr>
+    delayed(_fit_and_score)(
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py", line 330, in split
+    .format(self.n_splits, n_samples))
+ValueError: Cannot have number of splits n_splits=3 greater than the number of samples: n_samples=0.
+[2024-03-24 08:40:35,789] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=weather_data_pipeline, task_id=train_decision_tree, execution_date=20240324T083700, start_date=20240324T084034, end_date=20240324T084035
+[2024-03-24 08:40:35,883] {local_task_job.py:151} INFO - Task exited with return code 1
